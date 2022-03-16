@@ -1,0 +1,10 @@
+.title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    background-color: aliceblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
