@@ -12,6 +12,11 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("hello world");
+    // let study = document.getElementById("study-button");
+    function study() {
+      console.log("button was clicked");
+    }
   }
 
 }
