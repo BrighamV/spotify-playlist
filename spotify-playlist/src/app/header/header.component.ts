@@ -14,9 +14,23 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     console.log("hello world");
     // let study = document.getElementById("study-button");
-    function study() {
-      console.log("button was clicked");
+    const button = document.getElementById("study-button");
+    button?.addEventListener("click", handleClick);
+    const sleep = document.getElementById("sleep-button");
+    sleep?.addEventListener("click", handleSleep);
+   
+
+    function handleClick(this: HTMLElement) {
+      console.log("clicked");
+      document.body.scrollTop = 200;
+      document.documentElement.scrollTop = 200;
     }
+    function handleSleep(this: HTMLElement) {
+      console.log("clicked");
+      document.body.scrollTop = 1800;
+      document.documentElement.scrollTop = 1550;
+    }
+
   }
 
 }
